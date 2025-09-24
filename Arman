@@ -1,0 +1,59 @@
+### README.md Code
+
+Here is the code for the `README.md` file in Markdown format. You can copy this directly into a file named `README.md` in your project's root directory.
+
+```markdown
+# Data Science Assignment for Web3 Trading Team
+
+## Project Overview
+
+This project is a data science assignment to explore and analyze the relationship between trader behavior and overall market sentiment. The primary objective is to determine how key trading metrics, such as profitability and volume, align with or diverge from market sentiment classifications of "Fear" and "Greed."
+
+## Directory Structure
+
+This project follows the required directory structure:
+
+```
+
+ds\_\<candidate\_name\>/
+├── notebook\_1.ipynb       \# Main Colab notebook for the analysis
+├── csv\_files/             \# Directory to store datasets and intermediate CSV files
+├── outputs/               \# Directory for visual outputs (plots, charts, etc.)
+├── ds\_report.pdf          \# Final report summarizing key insights
+└── README.md              \# This file
+
+```
+
+## Datasets
+
+The analysis uses two primary datasets, which have been cleaned and merged for this project.
+
+### 1. Historical Trader Data
+
+| Column Name      | Description                                      |
+| ---------------- | ------------------------------------------------ |
+| `Timestamp IST`  | The date and time of the trade.                  |
+| `Closed PnL`     | The profit or loss from the closed position.     |
+| `Size USD`       | The size of the trade in USD (a measure of volume). |
+| `Account`        | The unique ID of the trader.                     |
+| `Execution Price`| The price at which the trade was executed.       |
+
+### 2. Bitcoin Market Sentiment Dataset
+
+| Column Name      | Description                                      |
+| ---------------- | ------------------------------------------------ |
+| `date`           | The date corresponding to the sentiment score.   |
+| `classification` | The market sentiment (Fear, Greed, Neutral).     |
+| `value`          | The numerical Fear & Greed Index score.          |
+
+## Analysis Objective
+
+The main goal of this analysis is to:
+* Analyze the correlation between trading profitability (`Closed PnL`) and market sentiment.
+* Examine how trading volume (`Size USD`) changes during different sentiment periods.
+* Identify any hidden trends or signals that could be used to develop smarter trading strategies.
+
+## Instructions
+
+All analysis was performed in a Google Colab notebook. To replicate the results, simply run the code provided in the `notebook_1.ipynb` file. The required data files are located in the `csv_files/` directory. The generated plots will be saved to the `outputs/` directory.
+```
